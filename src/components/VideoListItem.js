@@ -4,6 +4,7 @@ const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500/"
 
 const VideoListItem =  (props) => {
   function handleClick(){
+    // cette fonction permet de renvoyer les props movie au parent => VideoList qui les renverra lui à son componsant parrent => App
     props.callBackMovieClick(props.movie);
   }
 
